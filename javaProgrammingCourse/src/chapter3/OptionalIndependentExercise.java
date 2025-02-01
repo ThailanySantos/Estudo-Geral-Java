@@ -12,23 +12,23 @@ public class OptionalIndependentExercise {
         double quarter = .25;
         int dollar = 1;
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner reader = new Scanner(System.in);
 
         System.out.println("Welcome to 'Change for a Dollar'! " + "Your goal is to enter enough change to make exactly $1.00");
 
         System.out.println("Enter your number of pennies:");
-        int numOfPennies = scanner.nextInt();
+        int numOfPennies = reader.nextInt();
 
         System.out.println("Enter your number of nickels:");
-        int numOfNickels = scanner.nextInt();
+        int numOfNickels = reader.nextInt();
 
         System.out.println("Enter your number of dimes:");
-        int numOfDimes = scanner.nextInt();
+        int numOfDimes = reader.nextInt();
 
         System.out.println("Enter your number of quarters:");
-        int numOfQuarters = scanner.nextInt();
+        int numOfQuarters = reader.nextInt();
 
-        scanner.close();
+        reader.close();
 
         double total = numOfPennies * penny + numOfNickels * nickel + numOfDimes * dime + numOfQuarters * quarter;
 
